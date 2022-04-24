@@ -6,7 +6,7 @@
 /*   By: bmin <bmin@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 11:57:10 by bmin              #+#    #+#             */
-/*   Updated: 2022/04/24 11:59:17 by bmin             ###   ########.fr       */
+/*   Updated: 2022/04/24 23:51:29 by bmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*a = *a / *b;
-	*b = *a % *b;
+	int temp;
+	int test;
+
+	temp = *a / *b;
+	test = *a % *b;
+	*a = temp;
+	*b = test;
 }

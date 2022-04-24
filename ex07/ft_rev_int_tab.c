@@ -6,7 +6,7 @@
 /*   By: bmin <bmin@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 14:02:46 by bmin              #+#    #+#             */
-/*   Updated: 2022/04/24 18:27:28 by bmin             ###   ########.fr       */
+/*   Updated: 2022/04/24 23:58:37 by bmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,16 @@ void	ft_rev_int_tab(int *tab, int size)
 
 int	main()
 {
+	int size;
 	int tab[5];
 	int j;
 
+	size = 5;
 	j = 0;
 	while(j<=4)
 	{
 		tab[j] = j;
 		j++;
 	}
+	ft_rev_int_tab(tab, 
 }
